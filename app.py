@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
+import requests
 
 app = Flask(__name__)
 ENV = "prod"
@@ -63,6 +64,7 @@ def add_guest():
 
     # TODO
     # Create request that goes to send email in form of  request = requests.get('http://HerokuUrl/email') that triggers a get request for app.py
+    requests.get('https://wedding-email-service.herokuapp.com/')
 
     return render_template('success.html')
 
