@@ -3,14 +3,14 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
 
 app = Flask(__name__)
-ENV = "dev"
+ENV = "prod"
 
 if ENV == "dev":
     app.debug = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0nVerse2016!@localhost/postgres'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://wlcajyjwrhlush:dcb023d7790ce27efd3fae77d5e6c24ff1e7eb2fb76d798d7b7b027fa9523e1b@ec2-3-213-192-58.compute-1.amazonaws.com:5432/daqirlcu7lh0sr'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
