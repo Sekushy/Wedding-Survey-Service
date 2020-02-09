@@ -61,6 +61,9 @@ def add_guest():
     db.session.add(new_guest)
     db.session.commit()
 
+    # TODO
+    # Create request that goes to send email in form of  request = requests.get('http://HerokuUrl/email') that triggers a get request for app.py
+
     return render_template('success.html')
 
 # Get all guests
