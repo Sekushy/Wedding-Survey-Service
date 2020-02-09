@@ -64,7 +64,7 @@ def add_guest():
 
     # TODO
     # Create request that goes to send email in form of  request = requests.get('http://HerokuUrl/email') that triggers a get request for app.py
-    requests.get('https://wedding-email-service.herokuapp.com/email')
+    request = requests.get('https://wedding-email-service.herokuapp.com/email')
 
     return render_template('success.html')
 
