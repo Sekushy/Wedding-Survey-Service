@@ -60,7 +60,7 @@ twilio==6.31.0
 Twisted==20.3.0
 txaio==18.8.1
 typed-ast==1.4.0
-urllib3==1.25.6
+urllib3==1.26.5
 virtualenv==16.7.9
 virtualenv-clone==0.5.3
 Werkzeug==0.16.0
